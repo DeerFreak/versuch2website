@@ -1,0 +1,48 @@
+<!-- Navbar -->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark elegant-color" [containerInside]="false">
+  <mdb-navbar-brand>
+      <a class="logo navbar-brand" href="/home"><strong>Jakob Wagner</strong></a>
+  </mdb-navbar-brand>
+  <links>
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active waves-light" mdbWavesEffect>
+              <a class="nav-link" [routerLink]="['/home']" routerLinkActive="router-link-active" >Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+              <a class="nav-link" [routerLink]="['/projects']" routerLinkActive="router-link-active" >Projekte</a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+              <a class="nav-link" [routerLink]="['/cooking']" routerLinkActive="router-link-active" >Kochen</a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+              <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="router-link-active" >Kontakt</a>
+          </li>
+      </ul>
+      <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item waves-light" mdbWavesEffect>
+              <a class="nav-link"><mdb-icon fab icon="facebook-f"></mdb-icon></a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+              <a class="nav-link"><mdb-icon fab icon="twitter"></mdb-icon></a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+              <a class="nav-link"><mdb-icon fab icon="instagram"></mdb-icon></a>
+          </li>
+      </ul>
+  </links>
+</mdb-navbar>
+
+<!-- Main -->
+
+<main class="content">
+  <router-outlet></router-outlet>
+</main>
+
+<!-- /.Main -->
+
+  
+
+<footer _ngcontent-serverapp-c3="" class="footer footer-copyright elegant-color darken-1 py-3 text-center text-white footer">
+  <mdb-icon far icon="copyright"></mdb-icon> 2020 Copyright: 
+   <a _ngcontent-serverapp-c3="" class="text-white" href="https://jakob-wagner.org/home"> Jakob-wagner.org </a>
+</footer>
